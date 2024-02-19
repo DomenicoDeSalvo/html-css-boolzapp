@@ -32,8 +32,8 @@ body{
         #DBDBD4 15%,
         #DBDBD4 100%
     );
-    height: 100vh;
-    width: 100%;
+    
+    
 }
 
 :root{
@@ -55,4 +55,55 @@ body{
 
 .app{
     height: 100vh;
+}
+
+ 
+/* SIDEBAR */
+.sidebar{
+    display: none;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 768px) {
+    /* SIDEBAR */
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        width: 80px;
+        height: 100vh;
+        flex-shrink: 0;
+        background-color: white;
+    }
+    
+    .personail{
+        height: 70px;
+    }
+
+    /* CHAT */
+    .chat{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        background-color: white;
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 992px) {
+   
+    /* LAYOUT */
+    .container{
+        max-width: 85%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    } 
+
+    /* SIDEBAR */
+    .sidebar{
+        width: 380px;
+        background-color: var(--sidebar);
+    }   
 }
