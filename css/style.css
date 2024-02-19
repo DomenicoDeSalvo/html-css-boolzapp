@@ -20,3 +20,9 @@ a{
     color: currentColor;
     text-decoration: none;
 }
+
+/* LAYOUT */
+
+body{
+    font-family:"Lato", sans-serif;
+}
