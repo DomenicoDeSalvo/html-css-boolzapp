@@ -26,3 +26,15 @@ a{
 body{
     font-family:"Lato", sans-serif;
 }
+
+:root{
+    --grey-background: #DBDBD4;
+    --teal: #4D9389;
+    --top-bar: #EAEAEA;
+    --bottombar: #F2EEEB;
+    --sidebar: #FAFAFA;
+    --lightblue: #A6D7F9;
+    --icon-light: #B1B1B1;
+    --icon-dark: #6D7376;
+    --bubble-green: #DEF8C0;
+}
