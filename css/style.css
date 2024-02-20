@@ -65,10 +65,41 @@ body{
     display: flex;
 }
 
+.avatar{
+    border-radius: 50%;
+    display: block;
+    width: 50px;
+}
+
  
 /* SIDEBAR */
 .sidebar{
     display: none;
+}
+
+.personal__nav i{
+    color: var(--icon-light);
+}
+
+.card{
+    padding: 15px;
+    display: flex;
+    align-items: center; 
+    gap: 15px;   
+}
+
+.contacts__card{
+    border-bottom: 1px solid lightgrey;
+}
+
+.last-message{
+    font-size: 14px;
+    color: gray;
+}
+
+.time{
+    font-size: 14px;
+    color: gray;
 }
 
 /* CHAT */
@@ -110,11 +141,20 @@ body{
     .personal{
         height: 70px;
         background-color: var(--top-bar);
+        padding: 10px 16px;    
+    }
+
+    .personal__nav{
+        display: none;
     }
 
     .contacts{
         flex-grow: 1;
         background-color: white;
+    }
+
+    .contacts__card__body{
+        display: none;
     }
 
    
@@ -138,6 +178,17 @@ body{
         width: 380px;
         background-color: var(--app-background);
     } 
+
+    .personal{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .personal__nav{
+        display: flex;
+        gap: 20px;
+    }
     
     .desktop-notification{
         background-color: var(--lightblue);
@@ -151,5 +202,12 @@ body{
     .contacts{
         margin-right: 14px;
         border-right: 1px solid #E8E8E8; 
+    }
+
+    .contacts__card__body{
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+       
     }
 }
