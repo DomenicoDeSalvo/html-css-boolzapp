@@ -77,11 +77,6 @@ body{
     display: none;
 }
 
-.personal__nav i{
-    color: var(--icon-light);
-    font-size: 20px;
-}
-
 .card{
     padding: 15px;
     display: flex;
@@ -152,6 +147,7 @@ body{
     .contacts{
         flex-grow: 1;
         background-color: white;
+        overflow: auto;
     }
 
     .contacts__card__body,
@@ -194,6 +190,11 @@ body{
         display: flex;
         gap: 20px;
     }
+
+    .personal__nav i{
+        color: var(--icon-light);
+        font-size: 20px;
+    }
     
     .desktop-notification{
         background-color: var(--lightblue);
@@ -202,6 +203,12 @@ body{
 
     .search-bar{
         height: 50px;
+        padding: 7px;
+        display: block;
+    }
+
+    .search-bar input{
+        width: 100%;
     }
 
     .contacts{
