@@ -129,11 +129,34 @@ body{
 
 /* main */
 .chat__main{
-    margin-right: 14px;
     background-image: url(../img/mine.jpg);
     flex-grow: 1;
     overflow: auto;
 }
+
+.chat__main__container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.message{
+    max-width: 80%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sent{
+    background-color: var(--bubble-green);
+    align-self: flex-end;
+}
+
+.received{
+    background-color: white;
+    align-self: flex-start;
+}
+
 /* Bottombar */
 .chat__bottombar{
     height: 70px;
@@ -205,6 +228,12 @@ body{
         cursor: pointer;
     }
 
+    /* main */
+
+    .message{
+        max-width: 60%;
+    }
+
     /* Bottombar */
     .chat__bottombar i{
         display: block;
@@ -230,7 +259,7 @@ body{
 
     /* SIDEBAR */
     .sidebar{
-        width: 380px;
+        min-width:380px;
         background-color: var(--app-background);
     } 
 
@@ -333,4 +362,11 @@ body{
         flex-grow: 1;   
     }
 
+    /* CHAT */
+
+    /* main */
+
+    .chat__main__container{
+        width: 80%;
+    }
 }
