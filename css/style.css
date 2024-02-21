@@ -86,6 +86,7 @@ body{
     display: none;
 }
 
+/* Contacts layout */
 .contacts__card:not(:last-child){
     border-bottom: 1px solid lightgrey;
 }
@@ -108,6 +109,7 @@ body{
     background-color: var(--app-background);
 }
 
+/* Top-bar */
 .chat__top-bar{
     background-color: var(--top-bar);
     height: 70px;
@@ -125,13 +127,14 @@ body{
     display: none;
 }
 
+/* main */
 .chat__main{
     margin-right: 14px;
     background-image: url(../img/mine.jpg);
     flex-grow: 1;
     overflow: auto;
 }
-
+/* Bottombar */
 .chat__bottombar{
     height: 70px;
     background-color: var(--bottombar);
@@ -164,7 +167,7 @@ body{
         width: 90px;
         border-right: 1px solid lightgray;
     }
-    
+    /* Personal */
     .personal{
         height: 70px;
         background-color: var(--top-bar);
@@ -174,7 +177,7 @@ body{
     .personal__nav{
         display: none;
     }
-
+    /* Contacts */
     .contacts{
         height: calc(100% - 70px);
         background-color: white;
@@ -189,6 +192,7 @@ body{
 
     /* CHAT */
 
+    /* top-bar */
     .chat__top-bar__icons{
         display: flex;
         gap: 20px;
@@ -201,6 +205,7 @@ body{
         cursor: pointer;
     }
 
+    /* Bottombar */
     .chat__bottombar i{
         display: block;
         color: var(--icon-dark);
@@ -229,6 +234,8 @@ body{
         background-color: var(--app-background);
     } 
 
+    /* Personal */
+
     .personal{
         display: flex;
         align-items: center;
@@ -247,10 +254,37 @@ body{
 
     }
     
+    /* desktop notifications */
+
     .desktop-notification{
         background-color: var(--lightblue);
         height: 80px;
     }
+
+    .desktop-notification{
+        padding: 15px;
+        display: flex;
+        align-items: center; 
+        gap: 15px; 
+    }
+    
+    .desktop-notification a{
+        font-size: 14px;
+        color: grey;
+        text-decoration: underline;
+    }
+    
+    .desktop-notification i{
+        color: var(--lightblue);
+        border-radius: 50%;
+        background-color: white;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* search-bar */
 
     .search-bar{
         height: 50px;
@@ -286,6 +320,8 @@ body{
         font-size: 20px;
     }
 
+    /* contacts */
+
     .contacts{
         border-right: 1px solid #E8E8E8;
         height: calc(100% - 200px);
@@ -297,26 +333,4 @@ body{
         flex-grow: 1;   
     }
 
-    .desktop-notification{
-        padding: 15px;
-        display: flex;
-        align-items: center; 
-        gap: 15px; 
-    }
-
-    .desktop-notification a{
-        font-size: 14px;
-        color: grey;
-        text-decoration: underline;
-    }
-
-    .desktop-notification i{
-        color: var(--lightblue);
-        border-radius: 50%;
-        background-color: white;
-        width: 50px;
-        line-height: 50px;
-        text-align: center;
-        font-size: 20px;
-    }
 }
