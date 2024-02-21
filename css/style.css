@@ -163,10 +163,31 @@ body{
     margin-top: 15px;
 }
 
-
 .menu-icon{
     color: grey;
     font-size: 12px;
+    cursor: pointer;
+}
+
+.message__menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    right: -10px;
+}
+
+.menu-icon:hover .message__menu{
+    display: block;
+}
+
+.message__menu li{
+padding: 6px;
+cursor: pointer;
+}
+
+.message__menu li:hover{
+    background-color: lightgrey
 }
 
 .message__time{
