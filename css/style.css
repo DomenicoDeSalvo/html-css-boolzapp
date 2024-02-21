@@ -169,24 +169,25 @@ body{
     cursor: pointer;
 }
 
-.message__menu{
+.menu__content{
     display: none;
     position: absolute;
-    background-color: white;
-    z-index: 1;
+    background-color: var(--top-bar);
+    z-index: 999;
     right: -10px;
 }
 
-.menu-icon:hover .message__menu{
+.message__menu:hover .menu__content{
     display: block;
+    
 }
 
-.message__menu li{
+.menu__content li{
 padding: 6px;
 cursor: pointer;
 }
 
-.message__menu li:hover{
+.menu__content li:hover{
     background-color: lightgrey
 }
 
