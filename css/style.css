@@ -145,6 +145,36 @@ body{
     max-width: 80%;
     padding: 15px;
     border-radius: 10px;
+    display: flex;
+    position: relative;
+}
+
+.chat__main__container .message:last-child{
+    margin-bottom: 10px;
+}
+
+.sent + .sent,
+.received + .received{
+    margin-top: 5px;
+}
+
+.received + .sent,
+.sent + .received{
+    margin-top: 15px;
+}
+
+
+.menu-icon{
+    color: grey;
+    font-size: 12px;
+}
+
+.message__time{
+    font-size: 10px;
+    color: grey;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
 }
 
 .sent{
