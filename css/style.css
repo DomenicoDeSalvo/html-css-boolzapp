@@ -137,6 +137,18 @@ body{
     background-color: var(--bottombar);
     display: flex;
     justify-content: space-around;
+    padding: 10px 30px;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.chat__bottombar input{
+    flex-grow: 1;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    padding: 0 15px;
 }
 
 .chat__bottombar i{
@@ -186,17 +198,16 @@ body{
     .chat__top-bar__icons i{
         color: var(--icon-light);
         font-size: 20px;
+        cursor: pointer;
     }
 
     .chat__bottombar i{
         display: block;
         color: var(--icon-dark);
         font-size: 20px;
-    }
+        cursor: pointer;
 
-    
-
-   
+    }  
 }
 
 @media screen and (min-width: 992px) {
@@ -232,6 +243,8 @@ body{
     .personal__nav i{
         color: var(--icon-light);
         font-size: 20px;
+        cursor: pointer;
+
     }
     
     .desktop-notification{
@@ -243,12 +256,34 @@ body{
         height: 50px;
         padding: 7px;
         display: block;
+        position: relative;
     }
 
     .search-bar input{
         width: 100%;
         height: 36px;
-    
+        border: 1px solid lightgray;
+        padding-left: 55px;
+	    padding-right: 15px;
+        transition: padding 300ms;
+    }
+
+    .search-bar input:focus-visible + i{
+        display: none;
+    }
+
+    .search-bar input:focus-visible{
+        padding-left: 15px;
+    }
+
+    .search-bar i {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        color: var(--icon-light);
+        transform: translateY(-50%);
+        pointer-events: none;
+        font-size: 20px;
     }
 
     .contacts{
